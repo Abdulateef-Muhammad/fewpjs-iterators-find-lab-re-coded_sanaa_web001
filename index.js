@@ -14,4 +14,4 @@ function superbowlWin(array) {
   return array.find( e => e.result === 'W'? e: undefined)
 }
 
-console.log(superbowlWin(record));
+console.log(superbowlWin(record).year);
