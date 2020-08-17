@@ -11,7 +11,8 @@ const record = [
 ]
 
 function superbowlWin(array) {
-  return array.find( e => e.result === 'W'? e.year: undefined);
+  let result =  array.find( e => e.result === 'W'? e.year: undefined);
+  return result? result.year: undefined;
 }
 
 console.log(superbowlWin(record));
